@@ -6,20 +6,20 @@
   content: "";
 }
 
-* p{
+p {
   line-height: 1.5;
   font-weight: bold;
   color: #506a85;
 }
 
-* a{
+a {
   text-decoration: none;
   color: #506a85;
 }
 
-* input {
-  outline: 0;
-}
+input { outline: 0; }
+
+body { background-color: #f5f7fa }
 
 .wrapper {
   width: 100%;
@@ -38,52 +38,33 @@
 
 .headerMail {
   float: left;
-  height: 40px;
   margin-right: 26px;
-}
-
-.headerMail a {
-  line-height: 40px;
-}
-
-.headerMailIcon {
-  display: inline-block;
-  background-image: url("../img/header/icon-mail-off.png");
-  width: 11px;
-  height: 13px;
-  margin-right: 10px;
 }
 
 .headerTel {
   float: left;
-  height: 40px;
 }
 
-.headerTel a {
+.headerLinkAnchor {
   line-height: 40px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding-left: 23px;
   font-size: 12px;
 }
 
-.headerMail a {
-  font-size: 12px;
-}
+.headerMeilIcon { background-image: url(../img/header/icon-mail-off.png); }
+.headerTelIcon { background-image: url(../img/header/icon-tel-off.png); }
 
-.headerTelIcon {
-  display: inline-block;
-  background-image: url("../img/header/icon-tel-off.png");
-  width: 11px;
-  height: 13px;
-  margin-right: 10px;
-}
-
-.headerMeilAnchor:hover { color: #00bc9c; }
-.headerTelAnchor:hover { color: #00bc9c; }
-.headerMeilAnchor:hover .headerMailIcon { background-image: url("../img/header/icon-mail-on.png") }
-.headerTelAnchor:hover .headerTelIcon { background-image: url("../img/header/icon-tel-on.png") }
+.headerLinkAnchor:hover { color: #00bc9c; }
+.headerMeilIcon:hover { background-image: url(../img/header/icon-mail-on.png) }
+.headerTelIcon:hover { background-image: url(../img/header/icon-tel-on.png) }
 
 .siteLogoImg {
   margin-top: 30px;
   float: left;
+  width: 161px;
+  height: 40px;
 }
 
 .siteLogoImg:hover {
@@ -117,40 +98,45 @@
 
 .headerIconItem { display: inline-block; }
 
-
 .headerIconImg {
   display: block;
   width: 35px;
   height: 40px;
-  background-position: 50% 50%;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.fbImg { background-image: url("../img/header/icon-facebook-off.png"); }
-.goImg { background-image: url("../img/header/icon-google-off.png"); }
-.twImg { background-image: url("../img/header/icon-twitter-off.png"); }
-.piImg { background-image: url("../img/header/icon-pinterest-off.png"); }
-.beImg { background-image: url("../img/header/icon-behance-off.png"); }
-.drImg { background-image: url("../img/header/icon-dribbble-off.png"); }
+.fbImg { background-image: url(../img/header/icon-facebook-off.png); }
+.goImg { background-image: url(../img/header/icon-google-off.png); }
+.twImg { background-image: url(../img/header/icon-twitter-off.png); }
+.piImg { background-image: url(../img/header/icon-pinterest-off.png); }
+.beImg { background-image: url(../img/header/icon-behance-off.png); }
+.drImg { background-image: url(../img/header/icon-dribbble-off.png); }
 
 .fbImg:hover {
   background-color: #4668b3;
-  background-image: url("../img/header/icon-facebook-on.png");}
+  background-image: url(../img/header/icon-facebook-on.png);
+}
 .goImg:hover {
   background-color: #de5745;
-  background-image: url("../img/header/icon-google-on.png");}
+  background-image: url(../img/header/icon-google-on.png);
+}
 .twImg:hover {
   background-color: #2fbbed;
-  background-image: url("../img/header/icon-twitter-on.png");}
+  background-image: url(../img/header/icon-twitter-on.png);
+}
 .piImg:hover {
   background-color: #d94348;
-  background-image: url("../img/header/icon-pinterest-on.png");}
+  background-image: url(../img/header/icon-pinterest-on.png);
+}
 .beImg:hover {
   background-color: #3079ff;
-  background-image: url("../img/header/icon-behance-on.png");}
+  background-image: url(../img/header/icon-behance-on.png);
+}
 .drImg:hover {
   background-color: #eb6397;
-  background-image: url("../img/header/icon-dribbble-on.png");}
+  background-image: url(../img/header/icon-dribbble-on.png);
+}
 
 
 .keyvisualBox {
@@ -171,7 +157,7 @@
   width: 100%;
   height: 280px;
   padding: 300px 0;
-  background-image: url("../img/main/keyvisual.jpg");
+  background-image: url(../img/main/keyvisual.jpg);
 }
 
 .keyvisualTxt78px {
@@ -192,7 +178,7 @@
   background: #00bc9c;
   color: #fff;
   font-weight: bold;
-  border-bottom: solid 4px #00a085;
+  box-shadow: 0px 4px 0px 0px #00a085;
   border-radius: 5px;
   margin-top: 50px;
 }
@@ -201,21 +187,20 @@
   -ms-transform: translateY(4px);
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
-  border-bottom: none;
-  border-top: solid 4px transparent;
   transition-duration: 0.3s;
+  box-shadow: none;
 }
 
 .headerBottom {
   height: 100px;
-  background-color: #fff;
   width: 100%;
+  background-color: #fff;
 }
 
 .sideberWrap {
+  width: 100%;
   padding: 120px 0;
   background-color: #fff;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -239,6 +224,21 @@
   float: left;
 }
 
+.listTxtImgPassion {
+  width: 61px;
+  height: 53px;
+}
+
+.listTxtImgCreativity {
+  width: 46px;
+  height: 65px;
+}
+
+.listTxtImgQuality {
+  width: 56px;
+  height: 54px;
+}
+
 .listTxtBox {
   float: left;
   margin-left: 20px;
@@ -256,11 +256,12 @@
   text-align: left;
 }
 
-.passion,.creativity{
+.passion,
+.creativity {
   margin-right: 20px;
 }
 
-.txtWrap li {
+.txtWrap > li {
   display: inline-block;
 }
 
@@ -278,6 +279,11 @@
   display: inline-block;
   background-color: #fff;
   width: 570px;
+}
+
+.imgPosition {
+  width: 570px;
+  height: 390px;
 }
 
 .mediaCenterPoint {
@@ -379,7 +385,7 @@
   background: #00bc9c;
   color: #fff;
   font-weight: bold;
-  border-bottom: solid 4px #00a085;
+  box-shadow: 0px 4px 0px 0px #00a085;
   border-radius: 5px;
   margin-top: 80px;
 }
@@ -388,9 +394,8 @@
   -ms-transform: translateY(4px);
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
-  border-bottom: none;
-  border-top: solid 4px transparent;
   transition-duration: 0.3s;
+  box-shadow: none;
 }
 
 .footerTop {
@@ -422,6 +427,8 @@
 
 .whoWeAreImg {
   margin-top: 30px;
+  width: 129px;
+  height: 32px;
 }
 
 .whoWeAreMain {
@@ -450,6 +457,11 @@
   position: relative;
   display: inline-block;
   margin: 0 3px 3px 0;
+}
+
+.latestWorksSize{
+  width: 125px;
+  height: 85px;
 }
 
 .centerPoint {
@@ -483,55 +495,24 @@
   margin-top: 30px;
 }
 
-.getInTouchInfoAddress a {
-  line-height: 25px;
-  font-size: 14px;
-  color: #a3b1bf;
-  color: #a3b1bf;
-}
-
-.getInTouchInfoAddressIcon {
+.getInTouchInfoAnchor {
+  background-repeat: no-repeat;
+  background-position: center left;
   display: inline-block;
-  background-image: url("../img/footer/icon-address-off.png");
-  width: 11px;
-  height: 13px;
-  margin-right: 10px;
-}
-
-.getInTouchInfoMail a {
+  padding-left: 23px;
   line-height: 25px;
   font-size: 14px;
   color: #a3b1bf;
 }
 
-.getInTouchInfoMailIcon {
-  display: inline-block;
-  background-image: url("../img/footer/icon-mail-off.png");
-  width: 11px;
-  height: 13px;
-  margin-right: 10px;
-}
+.getInTouchInfoAddressIcon {  background-image: url(../img/footer/icon-address-off.png); }
+.getInTouchInfoMailIcon {  background-image: url(../img/footer/icon-mail-off.png); }
+.getInTouchInfoTelIcon {  background-image: url(../img/footer/icon-tel-off.png); }
 
-.getInTouchInfoTel a {
-  line-height: 25px;
-  font-size: 14px;
-  color: #a3b1bf;
-}
-
-.getInTouchInfoTelIcon {
-  display: inline-block;
-  background-image: url("../img/footer/icon-tel-off.png");
-  width: 11px;
-  height: 13px;
-  margin-right: 10px;
-}
-
-.getInTouchInfoAddressAnchor:hover { color: #00bc9c; }
-.getInTouchInfoMailAnchor:hover { color: #00bc9c; }
-.getInTouchInfoTelAnchor:hover { color: #00bc9c; }
-.getInTouchInfoAddressAnchor:hover .getInTouchInfoAddressIcon { background-image: url("../img/footer/icon-address-on.png") }
-.getInTouchInfoMailAnchor:hover .getInTouchInfoMailIcon { background-image: url("../img/footer/icon-mail-on.png") }
-.getInTouchInfoTelAnchor:hover .getInTouchInfoTelIcon { background-image: url("../img/footer/icon-tel-on.png") }
+.getInTouchInfoAnchor:hover { color: #00bc9c; }
+.getInTouchInfoAddressIcon:hover { background-image: url(../img/footer/icon-address-on.png) }
+.getInTouchInfoMailIcon:hover { background-image: url(../img/footer/icon-mail-on.png) }
+.getInTouchInfoTelIcon:hover { background-image: url(../img/footer/icon-tel-on.png) }
 
 .inputMail {
   background-color: #a3b1bf;
@@ -560,7 +541,7 @@
   background: #00bc9c;
   color: #fff;
   border-style: none;
-  border-bottom: solid 2px #00a085;
+  box-shadow: 0px 2px 0px 0px #00a085;
   border-radius: 5px;
 }
 
@@ -568,8 +549,7 @@
   -ms-transform: translateY(2px);
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
-  border-bottom: none;
-  border-top: solid 2px transparent;
+  box-shadow: none;
   transition-duration: 0.3s;
 }
 
@@ -603,23 +583,3 @@
 .footerBottomRightLink:hover {
   color: #00bc9c;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
