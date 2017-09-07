@@ -303,7 +303,7 @@
 
 .mediaImgMainList:hover .mediaImgOverlay { opacity: 0.9; }
 .mediaImgMainList:hover .mediaCenterPoint { opacity: 1; }
-.mediaImgMainList:hover .txtMainColor { color: #00bc9c; }
+.mediaImgMainList:hover .changeColor { color: #00bc9c; }
 
 .mediaImgTxtWrap {
   margin: 30px;
