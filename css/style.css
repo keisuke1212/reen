@@ -344,7 +344,8 @@
   text-align: center;
   opacity: 0;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 65px;
+  font-weight: normal;
 }
 
 .mediaSubImgOverlay {
@@ -356,7 +357,7 @@
 }
 
 .mediaImgSubList:hover .mediaSubImgOverlay { opacity: 0.9; }
-.mediaImgSubList:hover .mediaImgSubCente { opacity: 1; }
+.mediaImgSubList:hover .mediaImgSubCenter { opacity: 1; }
 
 .mediaImgSubList:not(:last-child) {
   margin-right: 30px;
